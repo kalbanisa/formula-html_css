@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulair</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend> 
+                A propos des CSS
+
+            </legend>
+            <p>Saver-vous ce que veut dire CSS ?</p>
+            <input type="radio" name="CSS" value="oui" id="oui checked="checked" />
+            <label for="oui" class="inline">oui</label>
+            <input type="radio" name="CSS" value="non" id="non"/>
+            <label for="non" class="inline">non</label>
+
+            <label for="utilise">Si oui les utilises-vous plutot</label>
+            <select name="utilise" id="utilise">
+                <option value="toujour">toujour</option>
+                <option value="parfois">parfois</option>
+                <option value="toujour">jamais</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Vos coordonnes :</legend>
+            <label for="email">Votre email :</label>
+            <input type="email" name="email" size="20" maxlength="40" value="email" id="email"/>
+
+            <label for="comment">Vos communtaire :</label>
+            <textarea name="comment" id="comments" cols="20" rows="4"></textarea>
+        </fieldset>
+        <p>
+            <input type="submit" value="Envoye"/>
+            <input type="reset" value="Annuler"/>
+        </p>
+    </form>
+</body>
+</html>
